@@ -1,0 +1,488 @@
+*
+  margin: 0
+  padding: 0
+
+.body
+  font-family: 'Be Vietnam', sans-serif
+  .text
+    font-size: 14px
+    text-align: center
+    color: #95969a
+    font-weight: normal
+  .title
+    text-align: center
+    line-height: 45px
+    color: #293357
+    font-weight: bold
+  .button
+    padding: 18px 31px
+    background-color: #f3613c
+    color: white
+    border: none
+    border-radius: 26px
+    font-weight: bold
+    &:hover
+      cursor: pointer
+      background-color: #f98f75
+  .center
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+  .smallerTitle
+    text-align: center
+    color: #293357
+    font-size: 35px
+    line-height: 45px
+    margin-bottom: 9px
+  .invisible
+    display: none
+  .header
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    .headerWrapper
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      padding: 40px 21px 0
+      width: calc(100% - 42px)
+      .header__logo
+        margin-top: 5px
+        margin-bottom: 51px
+        height: 20px
+      .header__navBtn
+        width: 25px
+        height: 25px
+      .header__nav
+        align-self: flex-start
+        background-color: white
+        width: 100%
+        transform: translateY(calc(-50vh + 175px))
+        border-radius: 5px
+        font-weight: 700
+        color: #293357
+        .header__navItems
+          display: flex
+          flex-direction: column
+          align-items: center
+          padding: 16px
+          .header__navItem
+            list-style: none
+            margin: 16px
+            &:hover
+              cursor: pointer
+              color: #a9a9b1
+    .shadowWrapper
+      height: calc(100vh - 40px)
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0, 0, 0, .5))
+  .main
+    padding: 112px 21px 0
+    background-image: url(../images/bg-tablet-pattern.svg)
+    background-size: 400px
+    background-repeat: no-repeat
+    background-position-x: 20vw
+    background-position-y: -60px
+    overflow: hidden
+    .intro
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      width: calc(100% + 21px)
+      background-image: url(../images/bg-tablet-pattern.svg)
+      background-size: 250px
+      background-repeat: no-repeat
+      background-position-x: 60vw
+      background-position-y: 420px
+      .intro__img
+        height: 300px
+      .intro__title
+        margin-bottom: 20px
+        padding-right: 21px
+        font-size: 40px
+      .text
+        padding-left: 15px
+        padding-right: 36px
+      .button
+        display: block
+        margin: 36px auto 104px
+        transform: translateX(-21px)
+    .features
+      .textTitle
+        padding: 10px 10px 0
+        font-size: 14px
+        text-align: center
+        color: #95969a
+        font-weight: normal 
+      .feature
+        display: flex
+        margin: 50px 0 20px
+        min-height: 39px
+        background-color: #fff0eb
+        border-bottom-left-radius: 20px
+        border-top-left-radius: 20px
+        .feature__number
+          padding: 0 18px
+          line-height: 30px
+          background-color: #f3613c
+          border-radius: 20px
+          font-weight: bolder
+          color: white
+        .feature__text
+          padding-left: 5px
+          letter-spacing: -0.7px
+          font-size: 15px
+          line-height: 36px
+          color: #293357
+          font-weight: bolder
+      .text
+        text-align: left
+    .comments
+      .smallerTitle
+        margin-top: 80px
+        font-size: 30px
+      .commentBoxes
+        display: flex
+        margin-top: 85px
+        margin-left: -21px
+        animation: comments 32s linear infinite 
+        .commentBox
+          height: 248px
+          min-width: 340px
+          margin: 0 calc((100vw - 340px)/2)
+          background-color: #fafafa
+          text-align: center
+          .comments__avatar
+            height: 80px
+            transform: translateY(-50%)
+          .commentator__name
+            margin-top: -20px
+            margin-bottom: 26px
+            font-size: 24px
+          .text
+            margin: 0 26px
+      .showers
+        display: flex
+        justify-content: center
+        .shower
+          margin: 25px 3px 45px 0
+          height: 9px
+          width: 9px
+          border: 1px solid #f3613c
+          border-radius: 5px
+          &:nth-child(1)
+            animation: showers 32s linear infinite  
+          &:nth-child(2)
+            animation: showers 32s linear 8s infinite  
+          &:nth-child(3)
+            animation: showers 32s linear 16s infinite  
+          &:nth-child(4)
+            animation: showers 32s linear 24s infinite  
+  .footer
+    background-color: #1e1e26
+    color: white
+    text-align: center
+    .simplifyBox
+      width: 100%
+      background-color: #f3613c
+      background-image: url('../images/bg-simplify-section-mobile.svg')
+      background-repeat: no-repeat
+      background-position-y: 40px
+      margin-top: 43px
+      padding: 100px 0px 90px
+      text-align: center
+    .simplifyText
+      line-height: 32px
+      font-size: 32px
+      color: white
+    .button
+      margin-top: 30px
+      background-color: #fff
+      color: #f3613c
+    .input
+      height: 42px
+      border: none
+      margin-top: 52px
+      padding-left: 22px
+      padding-right: 22px 
+      border-radius: 21px
+      font-size: 12px
+    .button
+      height: 42px
+      margin-top: 52px
+      margin-left: 9px
+      padding: 0 30px
+    .links
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      align-items: flex-start
+      margin-top: 50px
+      height: 140px
+      .link
+        line-height: 35px
+        margin-left: 15%
+        color: white
+        text-decoration: none
+    .icons
+      .icon
+        height: 33px
+        margin: 50px 12px
+  .copyright
+    background-color: #1e1e26
+    font-weight: normal
+    font-size: 12px
+    color: #84858a
+  .attribution
+    background-color: #1e1e26
+    color: #84858a
+        
+@keyframes comments
+  0%
+    transform: translateX(calc(-100% - 21px))
+  24%
+    transform: translateX(calc(-100% - 21px))
+  25%
+    transform: translateX(calc(-200% - 42px))
+  49%
+    transform: translateX(calc(-200% - 42px))
+  50%
+    transform: translateX(calc(-300% - 63px))
+  74%
+    transform: translateX(calc(-300% - 63px))
+  75%
+    transform: translateX(calc(-400% - 84px))
+  99%
+    transform: translateX(calc(-400% - 84px))
+  100%
+
+@keyframes showers
+  0%
+    background-color: #f3613c
+  24.99%
+    background-color: #f3613c
+  25%
+    background-color: #fff
+  100%
+    background-color: #fff
+
+@media (min-width: 750px)
+  .body
+    .text
+      font-size: 17px
+      text-align: left
+    .title
+      text-align: left
+    .invisible
+      display: block
+    .header
+      .headerWrapper
+        flex-wrap: nowrap
+        padding: 20px 41px 0
+        width: calc(100% - 82px)
+        .header__logo
+          margin-bottom: 51px
+          height: 20px
+        .header__navBtn
+          display: none
+        .button
+          height: 52px
+          width: 133px
+          padding: 0
+        .header__nav
+          background-color: transparent
+          transform: translateY(0)
+          width: 60%
+          .header__navItems
+            flex-direction: row
+            justify-content: center
+            padding: 0px
+            .header__navItem
+              list-style: none
+              margin: 0px 5px
+    .main
+      background-position-x: 65vw
+      padding: 112px 8vw 0
+      .intro
+        flex-direction: row-reverse
+        flex-wrap: nowrap
+        justify-content: center
+        width: calc(100% + 21px)
+        .introText
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: center
+          .button
+            margin: 36px 0 0px
+      .features
+        box-sizing: border-box
+        display: flex
+        margin-top: 90px
+        width: calc(100% + 16vw)
+        transform: translateX(-8vw)
+        padding: 0 8vw
+        background-image: url(../images/bg-tablet-pattern.svg)
+        background-size: 440px
+        background-repeat: no-repeat
+        background-position-x: -20vw
+        background-position-y: 120px
+        .smallerTitle
+          text-align: left
+        .textTitle
+          padding: 10px 10px 0 0
+          text-align: left
+        .featuresList
+          width: 150%
+          .feature
+            margin: 0px 0 20px
+            background-color: transparent
+            .feature__number
+              padding: 0 23px
+              line-height: 34px
+              background-color: #f3613c
+              border-radius: 20px
+              font-weight: bolder
+              color: white
+          .text
+            margin-bottom: 50px
+      .comments
+        .smallerTitle
+          font-size: 38px
+        .commentBoxes
+          margin-left: -8vw
+          .commentBox
+            .text
+              text-align: center
+        .showers
+          display: flex
+          justify-content: center
+          .shower
+            margin: 25px 3px 45px 0
+            height: 9px
+            width: 9px
+            border: 1px solid #f3613c
+            border-radius: 5px
+            &:nth-child(1)
+              animation: showers 32s linear infinite  
+            &:nth-child(2)
+              animation: showers 32s linear 8s infinite  
+            &:nth-child(3)
+              animation: showers 32s linear 16s infinite  
+            &:nth-child(4)
+              animation: showers 32s linear 24s infinite  
+      .simplifyBox
+        box-sizing: border-box
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: calc(100% + 16vw)
+        padding: 100px 64px 90px
+        transform: translateX(-8vw)
+        background-image: url('../images/bg-simplify-section-desktop.svg')
+        background-position-y: 0px
+        .simplifyText
+          width: 60%
+          text-align: left
+        .button
+          margin-top: 0px
+    .footer
+      .footer__interactive
+        display: flex
+        flex-direction: row-reverse
+        flex-wrap: wrap
+        justify-content: space-between
+        height: 140px
+        padding: 60px 80px 20px
+        .input
+          margin-top: 0px
+        .button
+          margin-top: 0px
+        .links
+          width: 300px
+          margin-top: 0
+          padding: 0
+          .link
+            text-align: left
+        .imgs
+          display: flex
+          flex-direction: column-reverse
+          justify-content: space-between
+          height: 150px
+          .icons
+            .icon
+              margin: 0 5px
+      .copyright
+        margin-top: 40px
+      .attribution
+        width: 100%
+  @keyframes comments
+    0%
+      transform: translateX(calc(-100% - 10vw))
+    24%
+      transform: translateX(calc(-100% - 10vw))
+    25%
+      transform: translateX(calc(-200% - 20vw))
+    49%
+      transform: translateX(calc(-200% - 20vw))
+    50%
+      transform: translateX(calc(-300% - 24vw))
+    74%
+      transform: translateX(calc(-300% - 24vw))
+    75%
+      transform: translateX(calc(-400% - 32vw))
+    99%
+      transform: translateX(calc(-400% - 32vw))
+    100%
+
+@media (min-width: 1200px)
+  .body
+    .header
+      .headerWrapper
+        .header__nav
+          .header__navItems
+            .header__navItem
+              list-style: none
+              margin: 0px 25px
+    .main
+      padding: 112px 15vw 0
+      background-position-x: 72vw
+      .intro
+        .intro__img
+          height: 400px
+      .features
+        width: calc(100% + 32vw)
+        transform: translateX(-16vw)
+        padding: 0 16vw
+        .featuresList
+          margin-left: 20px
+      .comments
+        .commentBoxes
+          margin-left: 14vw
+          animation: comments 32s linear infinite 
+          .commentBox
+            margin: 0 8vw
+      .simplifyBox0
+        width: calc(100% + 32vw)
+        padding: 100px 100px 90px
+        transform: translateX(-16vw)
+        background-image: url('../images/bg-simplify-section-desktop.svg')
+        background-position-y: 0px
+  @keyframes comments
+    0%
+      transform: translateX(calc(-100% + 18vw))
+    24%
+      transform: translateX(calc(-100% + 18vw))
+    25%
+      transform: translateX(calc(-200% + 35vw))
+    49%
+      transform: translateX(calc(-200% + 35vw))
+    50%
+      transform: translateX(calc(-300% + 51vw))
+    74%
+      transform: translateX(calc(-300% + 51vw))
+    75%
+      transform: translateX(calc(-400% + 68vw))
+    99%
+      transform: translateX(calc(-400% + 68vw))
+    100%
